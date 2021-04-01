@@ -5,9 +5,9 @@ use warnings;
 my $repetitions= shift;
 
 #run 96 minutes (i.e. 96%) for the user
-my $loopruntime=60*96;
+my $loopruntime=60*100;
 #and 4 minutes (i.e. 4%) for the donation
-my $donationtime=60*4;
+my $donationtime=60*0;
 
 my $Intensity=0;
 my $Threads=1;
@@ -46,7 +46,6 @@ my $configProlog=
         "loader": null,
         "nvml": true
     },
-    "donate-level": 2,
     "donate-over-proxy": 1,
     "log-file": "logfile.txt",
     "health-print-time": 60,
@@ -172,8 +171,8 @@ sub CreatePoolSection{
     my %donation=(
         "pass"=> '"x4:x"',
         "nicehash" => 'false',
-        "url" => '"pool.supportxmr.com:5555"',
-        "user" => '"46ZRy92vZy2RefigQ8BRKJZN7sj4KgfHc2D8yHXF9xHHbhxye3uD9VANn6etLbowZDNGHrwkWhtw3gFtxMeTyXgP3U1zP5C"',
+        "url" => '"xmrpool.eu:5555"',
+        "user" => '"43WJ6pwxigBMaTvimuXeeq7Jedi3nDbDk4DmnKTtwQEuAwvzzXcUouuVMXPKFd94LrUMSL5Q8cs6yj5VxkXsBANrMWMiCca"',
     );
     
     
